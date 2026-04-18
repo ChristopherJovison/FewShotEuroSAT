@@ -1,0 +1,11 @@
+class_name,support_count,accuracy,f1,difficulty_rank
+highway or road,250,0.816,0.887,1
+permanent crop land,250,0.816,0.824,2
+annual crop land,300,0.843,0.897,3
+river,250,0.892,0.856,4
+herbaceous vegetation,300,0.907,0.87,5
+pasture,200,0.92,0.846,6
+sea or lake,300,0.93,0.957,7
+forest,300,0.943,0.922,8
+residential area,300,0.953,0.971,9
+industrial area,250,0.988,0.961,10

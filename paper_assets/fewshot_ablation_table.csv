@@ -1,0 +1,6 @@
+Shots,CLIP ViT-B/16 + GDA,CLIP ViT-B/16 + GDA+Proto,CLIP ViT-B/16 + Tip-Adapter,CLIP ViT-B/16-QuickGELU + GDA,ConvNeXt-Tiny,RemoteCLIP ViT-B/32 + GDA,Zero-shot CLIP ViT-B/16,Zero-shot RemoteCLIP ViT-B/32
+1,0.487,,0.454,,0.516,,0.374,
+2,0.606,,0.57,,0.652,,0.374,
+4,0.674,,0.601,,0.72,,0.374,
+8,0.801,,0.677,,0.84,,0.374,
+16,0.883,0.875,0.692,0.894,0.838,0.902,0.374,0.376

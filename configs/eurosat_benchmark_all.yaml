@@ -1,0 +1,8 @@
+benchmark:
+  seeds: [42]
+  shots: [1, 2, 4, 8, 16]
+  configs:
+    - configs/eurosat_zeroshot_clip.yaml
+    - configs/eurosat_clip_gda.yaml
+    - configs/eurosat_clip_tip_adapter.yaml
+    - configs/eurosat_convnext_tiny.yaml

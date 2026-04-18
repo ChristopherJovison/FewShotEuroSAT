@@ -1,0 +1,40 @@
+experiment:
+  name: eurosat_zeroshot_clip
+  method: zeroshot_clip
+  seed: 42
+  shots: 16
+  device: auto
+  data_root: data
+  output_root: outputs
+
+dataset:
+  name: eurosat
+  type: imagefolder
+  root: data/eurosat/imagefolder
+  split_policy: train+val_support_test_eval
+  class_names:
+    - annual crop land
+    - forest
+    - herbaceous vegetation
+    - highway or road
+    - industrial area
+    - pasture
+    - permanent crop land
+    - residential area
+    - river
+    - sea or lake
+
+clip:
+  model_name: ViT-B-16
+  pretrained: openai
+  batch_size: 64
+  num_workers: 0
+  prompt_ensemble: true
+  prompt_templates:
+    - "a Sentinel-2 satellite image of {}."
+    - "a centered satellite image of {}."
+    - "a remote sensing image of {}."
+    - "an aerial image of {}."
+
+fewshot:
+  save_support: true

@@ -1,0 +1,31 @@
+\begin{tabular}{lrllll}
+\toprule
+Model & Shots & Top-1 Acc & Top-5 Acc & Macro F1 & Weighted F1 \\
+\midrule
+CLIP ViT-B/16 + GDA & 1 & 0.487 & 0.904 & \textbf{0.495} & \textbf{0.499} \\
+CLIP ViT-B/16 + GDA & 2 & 0.606 & 0.934 & 0.583 & 0.589 \\
+CLIP ViT-B/16 + GDA & 4 & 0.674 & 0.948 & 0.667 & 0.675 \\
+CLIP ViT-B/16 + GDA & 8 & 0.801 & 0.984 & 0.792 & 0.800 \\
+CLIP ViT-B/16 + GDA & 16 & 0.883 & 0.995 & 0.879 & 0.884 \\
+CLIP ViT-B/16 + GDA+Proto & 16 & 0.875 & 0.994 & 0.872 & 0.876 \\
+CLIP ViT-B/16 + Tip-Adapter & 1 & 0.454 & 0.906 & 0.446 & 0.450 \\
+CLIP ViT-B/16 + Tip-Adapter & 2 & 0.570 & 0.914 & 0.528 & 0.536 \\
+CLIP ViT-B/16 + Tip-Adapter & 4 & 0.601 & 0.941 & 0.591 & 0.597 \\
+CLIP ViT-B/16 + Tip-Adapter & 8 & 0.677 & 0.947 & 0.661 & 0.671 \\
+CLIP ViT-B/16 + Tip-Adapter & 16 & 0.692 & 0.941 & 0.677 & 0.686 \\
+CLIP ViT-B/16-QuickGELU + GDA & 16 & 0.894 & 0.992 & 0.893 & 0.895 \\
+ConvNeXt-Tiny & 1 & \textbf{0.516} & \textbf{0.943} & 0.475 & 0.477 \\
+ConvNeXt-Tiny & 2 & \textbf{0.652} & \textbf{0.967} & \textbf{0.629} & \textbf{0.643} \\
+ConvNeXt-Tiny & 4 & \textbf{0.720} & \textbf{0.965} & \textbf{0.698} & \textbf{0.715} \\
+ConvNeXt-Tiny & 8 & \textbf{0.840} & \textbf{0.996} & \textbf{0.830} & \textbf{0.837} \\
+ConvNeXt-Tiny & 16 & 0.838 & 0.994 & 0.832 & 0.837 \\
+ConvNeXt-Tiny Full Fine-Tune & 0 & \textbf{0.986} & \textbf{1.000} & \textbf{0.986} & \textbf{0.986} \\
+RemoteCLIP ViT-B/32 + GDA & 16 & \textbf{0.902} & \textbf{0.996} & \textbf{0.899} & \textbf{0.902} \\
+Zero-shot CLIP ViT-B/16 & 1 & 0.374 & 0.878 & 0.359 & 0.361 \\
+Zero-shot CLIP ViT-B/16 & 2 & 0.374 & 0.878 & 0.359 & 0.361 \\
+Zero-shot CLIP ViT-B/16 & 4 & 0.374 & 0.878 & 0.359 & 0.361 \\
+Zero-shot CLIP ViT-B/16 & 8 & 0.374 & 0.878 & 0.359 & 0.361 \\
+Zero-shot CLIP ViT-B/16 & 16 & 0.374 & 0.878 & 0.359 & 0.361 \\
+Zero-shot RemoteCLIP ViT-B/32 & 16 & 0.376 & 0.940 & 0.343 & 0.351 \\
+\bottomrule
+\end{tabular}

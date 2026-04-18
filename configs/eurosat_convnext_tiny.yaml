@@ -1,0 +1,37 @@
+experiment:
+  name: eurosat_convnext_tiny
+  method: convnext_tiny
+  seed: 42
+  shots: 16
+  device: auto
+  data_root: data
+  output_root: outputs
+
+dataset:
+  name: eurosat
+  type: imagefolder
+  root: data/eurosat/imagefolder
+  split_policy: train+val_support_test_eval
+  class_names:
+    - annual crop land
+    - forest
+    - herbaceous vegetation
+    - highway or road
+    - industrial area
+    - pasture
+    - permanent crop land
+    - residential area
+    - river
+    - sea or lake
+
+convnext:
+  weights: IMAGENET1K_V1
+  batch_size: 64
+  num_workers: 0
+  mode: linear_probe
+  epochs: 25
+  lr: 0.01
+  weight_decay: 0.0001
+
+fewshot:
+  save_support: true
