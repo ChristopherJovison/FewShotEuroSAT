@@ -2,7 +2,7 @@
 
 **Training Free Few Shot Adaptation for Remote Sensing Image Classification with CLIP and Gaussian Discriminant Analysis**
 
-This repository contains the EuroSAT experiments for RemoteCLIP few-shot adaptation. The main method is **RemoteCLIP + Gaussian Discriminant Analysis (GDA)**, which adapts frozen image features using a small labeled support set and no backbone fine tuning.
+This repository contains the EuroSAT experiments for RemoteCLIP few shot adaptation. The main method is **RemoteCLIP + Gaussian Discriminant Analysis (GDA)**, which adapts frozen image features using a small labeled support set and no backbone fine tuning.
 
 ## Install Dependencies
 
