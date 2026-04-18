@@ -10,7 +10,7 @@ The main workflow is in the notebooks:
 
 ```text
 notebooks/1_data_loader.ipynb      prepare/check EuroSAT and dataset EDA
-notebooks/2_model.ipynb            step-by-step RemoteCLIP + GDA model run
+notebooks/2_model.ipynb            step by step RemoteCLIP + GDA model run
 notebooks/3_visualization.ipynb    visualizations for the run from notebook 2
 ```
 
