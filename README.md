@@ -4,6 +4,16 @@
 
 This repository contains the EuroSAT experiments for RemoteCLIP few shot adaptation. The main method is **RemoteCLIP + Gaussian Discriminant Analysis (GDA)**, which adapts frozen image features using a small labeled support set and no backbone fine tuning.
 
+## Main Files
+
+The main workflow is in the notebooks:
+
+```text
+notebooks/1_data_loader.ipynb      prepare/check EuroSAT and dataset EDA
+notebooks/2_model.ipynb            step-by-step RemoteCLIP + GDA model run
+notebooks/3_visualization.ipynb    visualizations for the run from notebook 2
+```
+
 ## Install Dependencies
 
 Windows setup with Conda:
@@ -31,16 +41,6 @@ Quick test:
 
 ```powershell
 python -m unittest discover -s tests
-```
-
-## Main Files
-
-The main workflow is in the notebooks:
-
-```text
-notebooks/1_data_loader.ipynb      prepare/check EuroSAT and dataset EDA
-notebooks/2_model.ipynb            step-by-step RemoteCLIP + GDA model run
-notebooks/3_visualization.ipynb    visualizations for the run from notebook 2
 ```
 
 Important folders:
